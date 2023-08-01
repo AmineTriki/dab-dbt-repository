@@ -28,6 +28,6 @@ SELECT
 	-- value
   ,price
 	,IF(stock<0,NULL,ROUND(stock*price,2)) AS stock_value
-FROM `raw_data_circle.raw_cc_stock` t
+FROM `apt-cycling-393110.raw_data_circle.raw_cc_stock` t
 WHERE TRUE
 ORDER BY product_id
